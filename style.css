@@ -1,0 +1,453 @@
+.body {
+    background-color: #111;
+    color: #000000;
+}
+
+.bgimage {
+    height: 100vh;
+    background: url(images/mainBanner.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+
+
+@keyframes typewriter {
+    0% { width: 0; }
+    25% { width: 100%; }
+    50% { width: 0; }
+}
+
+.typewriter-text {
+    overflow: hidden;
+    border-right: 2px solid black; /* Adjust as needed */
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typewriter 1s steps(20) infinite;
+}
+
+
+.hero_title {
+    text-align: left;
+    font-family: 'Marcellus';
+    /* font-family: "Oswald",sans-serif; */
+    font-size: 32px;
+    margin-bottom: 0;
+    display: inline-block;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin: 0;
+    
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #11111195;
+}
+.navbar .icon {
+    display: none;
+    position: absolute;
+}
+
+/* @media screen and (min-width: 900px) {
+    .navbar.responsive {position: relative;}
+    .navbar .container li a.icon{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
+@media screen and (max-width: 600px) {
+    .navbar.responsive {position: relative;}
+    .navbar .container li a.icon{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .navbar .container li  a{
+        float: none;
+        display: block;
+        text-align: right;
+        font-size: small;
+    }
+    
+} */
+
+.navbar .container span{
+    color: #fff;
+}
+
+.navbar .container .collapse ul{
+    align-items: end;
+    
+}
+.navbar .container .navbar-toggler-icon:hover{
+    color: #008000;
+}
+/* .navbar .container button .navbar-toggler-icon:hover{
+    
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #008000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+} */
+
+
+.navbar .container .collapse a{
+    font-family: "Oswald",sans-serif;
+    margin-left: 14px;
+    margin-right: 14px;
+    
+}
+
+.navbar .container .collapse a:hover{
+    color:#008000;
+    
+}
+.navbar .container .collapse a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #008000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.navbar .container a:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.navbar .container  a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #008000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.navbar .container a:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.navbar .container a:hover{
+    color:#008000;
+    
+}
+.navbar .container a{
+    font-family: "Oswald",sans-serif;
+}
+
+.hero_desc {
+    /* font-size: 2rem; */
+    font-family: 'sans_serif';
+    font-size: 16px;
+    
+    
+    color: #fff;
+    margin-bottom: 30px;
+
+}
+
+@media (max-width: 850px){
+.social-links{
+    display: none;
+}
+}
+@media (max-width: 1300px){
+.social-links{
+    left: 25px;
+}
+}
+
+
+
+.social-links {
+    width: auto;
+    position: absolute;
+    line-height: 2.2rem;
+    left: 20px;
+    bottom: 20px;
+}
+.social-links .fa-facebook:hover{
+    color: #008000;
+}
+.social-links .fa-github:hover{
+    color: #008000;
+}
+
+.hero-text {
+    margin-left: 70px;
+    font-family: 'Marcellus';
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+}
+
+.navbar-brand{
+    color: #fff;
+}
+.navbar-nav a{
+    color: #ffffff;
+}
+
+/* about section image css */
+#about {
+    margin-top: -24px;
+    
+   
+}
+
+.imageAboutPage {
+    width: 100%;
+    height: 90%;
+}
+.text-center{
+    color: #ffffff;
+}
+.col-lg-8 {
+    color: #999999;
+}
+#about {
+    background-color: #111111;
+    padding: 40px 0 70px;
+}
+
+
+/* services section css */
+#services {
+    background-color: #202020;
+    padding: 40px 0 70px;
+}
+
+.servicesText.card {
+    height: 280px;
+    cursor: pointer;
+  }
+.servicesIcon {
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+}
+
+
+.card-title {
+    text-align: center;
+}
+.card:hover .servicesIcon {
+    color: #008000;
+}
+.servicesText:hover {
+    border: 1px solid #008000;
+}
+
+/* display background color black on navbar scroll */
+.navbarScroll.navbarDark {
+    background-color: #1c1b1ba2;
+}
+
+#portfolio {
+    background-color: #111111;
+    padding: 40px 0 70px;
+}
+#portfolio .container {
+    color: #111111;
+}
+section{
+    margin-top: -16px;
+}
+#contact {
+    background-color: #202020;
+    padding: 40px 0 70px;
+}
+
+.social-links li a .fab{
+    font-size: 26px;
+    
+}
+.social-links li a .fa-brands{
+    font-size: 26px;
+    color: #ffffffa2;
+    
+}
+
+/* social media icons styling */
+
+.social-icons , .fa-github{
+    font-size: 36px;
+    cursor: pointer;
+}
+.fa-facebook:hover,.fa-instagram:hover,.fa-linkedin:hover, .fa-github:hover {
+    color: #008000;
+}
+.fab , .fa-github, .fa-facebook{
+    color: #ffffffa2;
+}
+/* footer styling */
+#footer {
+    background-color: #808080;
+    text-align: center;
+}
+
+.theme-btn {
+    font-family: "Oswald",sans-serif;
+    height: 50px;
+    line-height: 47px;
+    font-size: 16px;
+    font-size: 1.06667rem;
+    color: #ffffff96;
+    border: 1px solid hsla(0,0%,40%,.8);
+    padding: 0 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    transition: all .3s;
+    text-decoration: none;
+}
+.theme-btn:hover{
+    color: #008000;
+}
+
+.new-button{
+    font-family:  sans-serif;
+    color: #6cc25f;
+    border: 1px solid hsla(123, 37%, 55%, 0.8);
+    padding: 0 10px;
+    text-transform: uppercase;
+    
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: .3s;
+    
+}
+.new-button:hover{
+    background-color: #008000;
+    color: #ffffff;
+}
+
+a, a:focus, a:hover {
+    text-decoration: none;
+}
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+#portfolio .container .row img{
+    width: 100%;
+    
+}
+
+.line{
+    width: 100%;
+    height: 1px;
+    background-color: #008000;
+}
+
+.loader {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.688);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader > img {
+    width: 100px;
+}
+
+.loader.hidden {
+    animation: fadeOut 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 30px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #008000; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 10px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 15px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+
+.ac_btn, .ac_btn2 {
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.ac_btn {
+    border: 2px solid var(--secondary-color);
+    border-radius: 0;
+    color: var(--secondary-color);
+    cursor: pointer;
+    margin-right: 20px;
+    overflow: hidden;
+    padding: 4px 19px;
+    position: relative;
+    transition: all .6s cubic-bezier(.55, 0, .1, 1);
+}
+
+.btn {
+    background-color: initial;
+    border: 1px solid white;
+    border-radius: .25rem;
+    color: #212529;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: .375rem .75rem;
+    text-align: center;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    -webkit-user-select: none;
+    user-select: none;
+    vertical-align: middle;
+}
