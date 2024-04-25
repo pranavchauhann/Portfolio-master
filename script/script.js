@@ -59,46 +59,14 @@ const typewriterText = [
     "I code cool websites"
 ];
 
-let currentTextIndex = 0; // Index of the current text being displayed
-let currentCharIndex = 0; // Index of the current character being displayed
-let isDeleting = false; // Flag to indicate whether characters are being deleted
+let currentIndex = 0;
 
 function animateText() {
-    const currentText = typewriterText[currentTextIndex];
-    
-    if (!isDeleting) {
-        // Add characters one by one
-        animatedLine.textContent = currentText.substring(0, currentCharIndex + 1);
-        currentCharIndex++;
-
-        // Check if all characters have been added
-        if (currentCharIndex === currentText.length) {
-            // Start deleting characters after a delay
-            isDeleting = true;
-            setTimeout(() => {
-                currentCharIndex--;
-                animateText();
-            }, 2000); // Delay before starting deletion
-        }
-    } else {
-        // Delete characters one by one
-        animatedLine.textContent = currentText.substring(0, currentCharIndex - 1);
-        currentCharIndex--;
-
-        // Check if all characters have been deleted
-        if (currentCharIndex === 0) {
-            // Move to the next text after a delay
-            isDeleting = false;
-            currentTextIndex = (currentTextIndex + 1) % typewriterText.length;
-            setTimeout(animateText, 1000); // Delay before starting the next text
-        }
-    }
+    animatedLine.innerHTML = typewriterText[currentIndex];
+    currentIndex = (currentIndex + 1) % typewriterText.length;
 }
 
-// Start the typewriter animation
-animateText();
-
-
+setInterval(animateText, 2000); // Change text every 2 seconds
 
 // Loader
 window.addEventListener("load", function () {
