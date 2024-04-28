@@ -237,10 +237,17 @@
     padding: 40px 0 70px;
 }
 
-.servicesText.card {
+.servicesText {
     height: 280px;
     cursor: pointer;
   }
+.card {
+    width: 300px; /* Set the desired width */
+    height: 400px; /* Set the desired height */
+    cursor: pointer;
+}
+
+
 .servicesIcon {
     font-size: 36px;
     text-align: center;
@@ -254,6 +261,13 @@
 .card:hover .servicesIcon {
     color: #008000;
 }
+
+.card-img-top {
+    width: 100%; /* Ensure the image fills the entire width of the card */
+    height: auto; /* Maintain the image's aspect ratio */
+}
+
+
 .servicesText:hover {
     border: 1px solid #008000;
 }
